@@ -9,6 +9,11 @@ h1 {
   font-size: 90px;
 }
 h2 {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 40px;
+}
+h3 {
   font-family: var(--default-font);
   font-weight: 600;
   font-size: 40px;
@@ -31,4 +36,44 @@ h2 {
 .btn-contact-me {
   font-size: 25px;
   border: 1px solid black;
+  margin-top: 50px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.project-info {
+  text-align: center;
+}
+.project-info a {
+  font-family: var(--default-font);
+}
+.parag {
+  font-family: var(--default-font);
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px 30px 20px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .hero {
+    padding: 80px 25px 50px;
+  }
+  .btn-contact-me {
+    margin-top: 30px;
+  }
+  .container {
+    margin-top: 10px;
+  }
 }
