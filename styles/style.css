@@ -1,6 +1,7 @@
 :root {
   --heading-font: "Playfair Display SC", serif;
   --default-font: "Gantari", sans-serif;
+  --default-background-color: rgb(255, 246, 232);
 }
 
 h1 {
@@ -19,7 +20,7 @@ h3 {
   font-size: 40px;
 }
 .hero {
-  background-color: rgb(255, 246, 232);
+  background-color: var(--default-background-color);
   text-align: center;
   padding: 100px 25px 70px;
 }
@@ -46,8 +47,18 @@ h3 {
 .project-info {
   text-align: center;
 }
+
+.btn-launch-project {
+  background-color: var(--default-background-color);
+}
+.btn-launch-project:hover {
+  background-color: rgb(228, 103, 45);
+  border-color: rgb(228, 103, 45);
+}
 .project-info a {
   font-family: var(--default-font);
+  font-weight: 600;
+  font-size: 18px;
 }
 .parag {
   font-family: var(--default-font);
@@ -55,6 +66,18 @@ h3 {
   font-weight: 600;
   font-size: 20px;
   padding: 10px 30px 20px;
+}
+footer {
+  background-color: var(--default-background-color);
+  padding: 50px;
+  text-align: center;
+}
+footer a {
+  font-family: var(--default-font);
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
 @media (max-width: 576px) {
