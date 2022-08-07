@@ -80,7 +80,32 @@ footer a {
   padding: 0 10px;
 }
 
-@media (max-width: 576px) {
+.container .about-section {
+  margin: 100px 0 0 0;
+}
+
+.about-section .parag {
+  padding: 10px 0 0;
+}
+.about-section .btn-contact-me {
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 25px;
+  border: 1px solid black;
+}
+.about-paragraph {
+  text-align: center;
+  padding: 40px;
+}
+.col-photo {
+  display: flex;
+  align-items: center;
+}
+.img-inna {
+  border-radius: 10px;
+  margin: 10px;
+}
+@media (max-width: 767.98px) {
   h1 {
     font-size: 50px;
   }
@@ -93,10 +118,39 @@ footer a {
   .hero {
     padding: 80px 25px 50px;
   }
+
   .btn-contact-me {
     margin-top: 30px;
   }
-  .container {
-    margin-top: 10px;
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .col-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .img-inna {
+    margin: 10px;
+    max-width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .col-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .img-inna {
+    max-width: 60%;
+  }
+  .about-section {
+    margin: 50px;
   }
 }
