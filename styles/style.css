@@ -9,6 +9,11 @@ h1 {
   font-weight: 700;
   font-size: 90px;
 }
+.content-section h1 {
+  font-family: var(--default-font);
+  font-weight: 700;
+  font-size: 50px;
+}
 h2 {
   font-family: var(--heading-font);
   font-weight: 700;
@@ -80,6 +85,14 @@ footer a {
   padding: 0 10px;
 }
 
+.content-section {
+  margin: 100px 30px;
+  text-align: center;
+}
+.content-section .parag {
+  padding: 0 30px 20px;
+}
+
 .container .about-section {
   margin: 100px 0 0 0;
 }
@@ -109,6 +122,9 @@ footer a {
   h1 {
     font-size: 50px;
   }
+  .content-section h1 {
+    font-size: 36px;
+  }
   h3 {
     font-size: 25px;
   }
@@ -118,11 +134,14 @@ footer a {
   .hero {
     padding: 80px 25px 50px;
   }
+  .content-section {
+    margin: 50px 30px;
+  }
 
   .btn-contact-me {
     margin-top: 30px;
   }
-  .row {
+  .row-about {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -137,7 +156,7 @@ footer a {
   }
 }
 @media (min-width: 768px) and (max-width: 993px) {
-  .row {
+  .row-about {
     display: flex;
     flex-direction: column-reverse;
   }
