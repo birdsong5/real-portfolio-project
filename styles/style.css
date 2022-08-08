@@ -39,10 +39,19 @@ h3 {
   font-family: var(--default-font);
   font-weight: 700;
 }
-.btn-contact-me {
+.btn-contact-me,
+.button-contact-me {
   font-size: 25px;
   border: 1px solid black;
+}
+.btn-contact-me {
   margin-top: 50px;
+}
+
+.contact-me-container .col-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -76,6 +85,7 @@ footer {
   background-color: var(--default-background-color);
   padding: 50px;
   text-align: center;
+  margin-top: 50px;
 }
 footer a {
   font-family: var(--default-font);
@@ -118,6 +128,21 @@ footer a {
   border-radius: 10px;
   margin: 10px;
 }
+
+.contact-me-section h2 {
+  margin: 180px 250px 0;
+  font-size: 65px;
+}
+.contact-me-container {
+  background-color: var(--default-background-color);
+  border-radius: 20px;
+  padding: 20px 40px;
+  width: 70%;
+}
+.contact-me-container h1 {
+  font-size: 60px;
+}
+
 @media (max-width: 767.98px) {
   h1 {
     font-size: 50px;
@@ -154,6 +179,21 @@ footer a {
     margin: 10px;
     max-width: 60%;
   }
+
+  .contact-me-section h2 {
+    text-align: center;
+    margin: 50px 10px 0;
+    font-size: 45px;
+  }
+  .contact-me-container {
+    background-color: var(--default-background-color);
+    border-radius: 20px;
+    padding: 10px 10px 20px;
+    text-align: center;
+  }
+  .contact-me-container h1 {
+    font-size: 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 993px) {
   .row-about {
@@ -171,5 +211,10 @@ footer a {
   }
   .about-section {
     margin: 50px;
+  }
+  .contact-me-section h2 {
+    text-align: center;
+    margin: 100px 30px 0;
+    font-size: 55px;
   }
 }
