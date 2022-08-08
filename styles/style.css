@@ -35,7 +35,8 @@ h3 {
   font-family: var(--default-font);
   font-weight: 600;
 }
-.hero a {
+.hero a,
+.contact-me-container a {
   font-family: var(--default-font);
   font-weight: 700;
 }
