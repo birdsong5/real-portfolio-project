@@ -2,6 +2,7 @@
   --heading-font: "Playfair Display SC", serif;
   --default-font: "Gantari", sans-serif;
   --default-background-color: rgb(255, 246, 232);
+  --active-link-color: rgb(221, 77, 20);
 }
 
 nav {
@@ -34,7 +35,7 @@ nav a {
 
 nav a:hover,
 nav li.active a {
-  color: rgb(104, 36, 4);
+  color: var(--active-link-color);
 }
 
 h1 {
@@ -103,8 +104,8 @@ h3 {
   background-color: var(--default-background-color);
 }
 .btn-launch-project:hover {
-  background-color: rgb(228, 103, 45);
-  border-color: rgb(228, 103, 45);
+  background-color: var(--active-link-color);
+  border-color: var(--active-link-color);
 }
 .project-info a {
   font-family: var(--default-font);
@@ -119,17 +120,33 @@ h3 {
   padding: 10px 30px 20px;
 }
 footer {
-  background-color: var(--default-background-color);
   padding: 50px;
   text-align: center;
   margin-top: 50px;
 }
-footer a {
+footer .email-link a {
   font-family: var(--default-font);
-  font-size: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+footer .email-link {
+  padding: 0 0 40px 0;
+}
+footer .social-links a {
+  font-family: var(--default-font);
+  font-size: 25px;
   color: black;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 10px 14px;
+  margin: 0 20px;
+  background-color: var(--default-background-color);
+  border-radius: 50%;
+}
+footer .email-link a:hover,
+footer .social-links a:hover {
+  color: var(--active-link-color);
 }
 
 .content-section {
@@ -151,7 +168,11 @@ footer a {
   font-family: var(--default-font);
   font-weight: 700;
   font-size: 25px;
-  border: 1px solid black;
+  border: 1px solid var(--default-background-color);
+  background-color: var(--default-background-color);
+}
+.about-section .btn-contact-me:hover {
+  background-color: var(--active-link-color);
 }
 .about-paragraph {
   text-align: center;
@@ -235,9 +256,9 @@ footer a {
     max-width: 60%;
   }
 
-  .contact-me-section h2 {
+  .contact-me-section h3 {
     text-align: center;
-    margin: 50px 10px 0;
+    margin: 50px 20px 0;
     font-size: 45px;
   }
   .contact-me-container {
@@ -248,6 +269,10 @@ footer a {
   }
   .contact-me-container h1 {
     font-size: 50px;
+  }
+  footer .social-links a {
+    font-size: 25px;
+    margin: 0 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 993px) {
@@ -267,7 +292,7 @@ footer a {
   .about-section {
     margin: 50px;
   }
-  .contact-me-section h2 {
+  .contact-me-section h3 {
     text-align: center;
     margin: 100px 30px 0;
     font-size: 55px;
