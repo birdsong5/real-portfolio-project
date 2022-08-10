@@ -144,21 +144,27 @@ footer .social-links a {
   background-color: var(--default-background-color);
   border-radius: 50%;
 }
+footer p {
+  font-family: var(--default-font);
+  opacity: 0.9;
+
+  font-size: 15px;
+  margin: 40px 30px 0;
+}
+footer p a {
+  color: rgb(1, 1, 97);
+}
 footer .email-link a:hover,
 footer .social-links a:hover {
   color: var(--active-link-color);
 }
 
 .content-section {
-  margin: 100px 30px;
+  margin: 100px 40px;
   text-align: center;
 }
 .content-section .parag {
   padding: 0 30px 20px;
-}
-
-.container .about-section {
-  margin: 100px 0 0 0;
 }
 
 .about-section .parag {
@@ -202,8 +208,8 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 767.98px) {
-  .hero nav {
-    padding: 10px;
+  nav {
+    padding: 20px 4px;
     display: flex;
     justify-content: center;
   }
@@ -233,7 +239,10 @@ footer .social-links a:hover {
     font-size: 30px;
   }
   .hero {
-    padding: 10px 15px 50px;
+    padding: 0 10px 50px;
+  }
+  .hero h5 {
+    margin: 0 15px 8px;
   }
   .content-section {
     margin: 50px 30px;
@@ -242,6 +251,7 @@ footer .social-links a:hover {
   .btn-contact-me {
     margin-top: 30px;
   }
+
   .row-about {
     display: flex;
     flex-direction: column-reverse;
@@ -258,7 +268,7 @@ footer .social-links a:hover {
 
   .contact-me-section h3 {
     text-align: center;
-    margin: 50px 20px 0;
+    margin: 50px 30px 0;
     font-size: 45px;
   }
   .contact-me-container {
@@ -269,6 +279,14 @@ footer .social-links a:hover {
   }
   .contact-me-container h1 {
     font-size: 50px;
+  }
+  footer {
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  footer .email-link a {
+    font-size: 25px;
   }
   footer .social-links a {
     font-size: 25px;
@@ -289,9 +307,10 @@ footer .social-links a:hover {
   .img-inna {
     max-width: 60%;
   }
-  .about-section {
-    margin: 50px;
+  .content-section {
+    margin: 100px 50px;
   }
+
   .contact-me-section h3 {
     text-align: center;
     margin: 100px 30px 0;
