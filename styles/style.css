@@ -323,6 +323,11 @@ footer .social-links a:hover {
   .img-inna {
     max-width: 60%;
   }
+  .skills-container .skills-row img {
+    padding: 10px 6px;
+    width: 84px;
+    height: 90px;
+  }
   .content-section {
     margin: 100px 50px;
   }
