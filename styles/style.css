@@ -72,8 +72,7 @@ h3 {
   font-family: var(--default-font);
   font-weight: 600;
 }
-.hero a,
-.shecodes-link {
+.hero a {
   font-family: var(--default-font);
   font-weight: 700;
 }
@@ -81,6 +80,8 @@ h3 {
 .button-contact-me {
   font-size: 25px;
   border: 1px solid black;
+  font-family: var(--default-font);
+  font-weight: 700;
 }
 .btn-contact-me {
   margin-top: 50px;
@@ -92,7 +93,7 @@ h3 {
   align-items: center;
 }
 
-.container {
+.container-margin {
   margin-top: 50px;
 }
 
@@ -152,7 +153,7 @@ footer p {
   margin: 40px 30px 0;
 }
 footer p a,
-.about-paragraph a {
+.shecodes-link {
   color: rgb(1, 1, 97);
 }
 footer .email-link a:hover,
@@ -192,6 +193,15 @@ footer .social-links a:hover {
 .img-inna {
   border-radius: 10px;
   margin: 10px;
+}
+
+.skills-container {
+  margin: 20px 0;
+}
+.skills-container .skills-row img {
+  padding: 20px;
+  width: 128px;
+  height: 128px;
 }
 
 .contact-me-section h3 {
@@ -265,6 +275,11 @@ footer .social-links a:hover {
   .img-inna {
     margin: 10px;
     max-width: 60%;
+  }
+  .skills-container .skills-row img {
+    padding: 10px;
+    width: 90px;
+    height: 90px;
   }
 
   .contact-me-section h3 {
